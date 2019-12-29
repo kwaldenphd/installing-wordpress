@@ -30,13 +30,13 @@ And finally, you need a web browser. We have the GUI browser and `lynx` at the c
 
 <blockquote>FTP and Shell: In the documentation you see a reference to FTP and Shell. FTP stands for File Transfer Protocol and Shell is short for SSH or Secure Shell. Think back to when we installed the firewall – these were two additional protocols or rules that we could add to our firewall. Both methods are used to access a server, usually offsite. That is, if you are using a hosting service you would use FTP or SSH to log into your server remotely. We’ll take a look at FTP later, as this is the method that WordPress uses to load themes and plugins.</blockquote>
 
-[IMAGE]
+<p align="center"><a href="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_2.jpg?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_2.jpg?raw=true" /></a></p>
 
 Look at the system requirements to get a sense of what the minimum software requirements for WordPress. Here we see some of the LAMP stack components we installed in the LAMP stack project.
 
 <blockquote>Nginx: (pronounced Engine X) is another web server http://nginx.org/. You can use Nginx as an alternative to Apache in your stack.</blockquote>
 
-[IMAGE]
+<p align="center"><a href="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_3.png?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_3.png?raw=true" /></a></p>
 
 Now we are ready to install. Let’s look at the instructions for WordPress's “Famous 5-Minute Install” https://codex.wordpress.org/Installing_WordPress#Famous_5-Minute_Install.
 
@@ -56,7 +56,7 @@ We'll a database for WordPress on your web server, as well as a MySQL user who h
 
 When we installed MySQL a few weeks ago, we created a database called csc2020 and a user cs_user. All we need to do is repeat this step to create a database for WordPress to use.
 
-[IMAGE]
+<p align="center"><a href="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_4.jpg?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_4.jpg?raw=true" /></a></p>
 
 Open a Terminal session and log in to MySQL with the command `mysql –u root –p;` This command is requesting to log in to MySQL as the root user. You’ll be prompted for your root password. **Remember the cursor will not move as you enter your password.**
 
@@ -66,11 +66,11 @@ Open a Terminal session and log in to MySQL with the command `mysql –u root �
   
 You will now see the mysql prompt `mysql>`. Remember, this means that we are now working within MySQL and not the Bash Shell.
 
-[IMAGE]
+<p align="center"><a href="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_5.jpg?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_5.jpg?raw=true" /></a></p>
  
 Now we can create a new database and user for WordPress. You can call your database anything that you’d like. Here I am going to call my database `wp2020.` Create a new database using `sudo create database wp2020;`.
 
-[IMAGE]
+<p align="center"><a href="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_6.jpg?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_6.jpg?raw=true" /></a></p>
 
 Now you need to create a user and password. Again, you can call your user whatever you’d like. I’m using `wp_user`. Replace the word `password` with your password. `grant all on wp2020.* to ‘wp_user’ identified by ‘password’;`
 
@@ -90,7 +90,7 @@ Navigate to `Downloads` in the Terminal with the `cd` command. Use `ls` to see t
 
 Use `unzip` to unzip or “inflate” the compressed file.
 
-[IMAGE]
+<p align="center"><a href="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_7.jpg?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_7.jpg?raw=true" /></a></p>
 
 Use the `ls` command again. You should now see a `wordpress` directory in blue text.
 
@@ -178,7 +178,7 @@ When prompted by WordPress use the host `ftp.mysite.dev` along with `pi` as your
 
 # Create a WordPress Site
 
-[IMAGE]
+<p align="center"><a href="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_8.jpg?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_8.jpg?raw=true" /></a></p>
 
 Now, take some time to add some content to your new WordPress site. Unlike our HTML example, we have a GUI interface for generating a website. Pick a theme, create a blog post, and add a page. You can use your HTML project site as an example
 
@@ -205,7 +205,7 @@ While the Customize menu allows you to make changes to the theme that you select
 
 <blockquote>Q2: Navigate through the .css and some of the .php files. Do you feel comfortable editing these files? What looks familiar? What do you have questions about?</blockquote>
 
-[IMAGE]
+<p align="center"><a href="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_9.jpg?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_9.jpg?raw=true" /></a></p>
 
 Now let’s look at the WordPress database. 
 
