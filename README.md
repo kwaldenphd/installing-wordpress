@@ -1,5 +1,10 @@
 # WordPress installation lab
 
+This tutorial was written by [Lindsay K. Mattock](http://lindsaymattock.net) and adapted by [Katherine Walden](https://github.com/kwaldenphd). 
+
+<a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license"><img style="border-width: 0;" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" alt="Creative Commons License" /></a>
+This tutorial is licensed under a <a href="http://creativecommons.org/licenses/by-nc/4.0/" rel="license">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+
 In this lab, we will install WordPress on our Raspberry Pi Webserver. 
 
 WordPress has two versions: 
@@ -15,6 +20,12 @@ By the end of this lab you will be able to:
 -	Describe how the elements of the LAMP stack work together with self-hosted software
 -	Install and configure an FTP client on your Pi
 -	Build a website using WordPress
+
+## Acknowledgements
+
+This lab is based on the "Project 6: WordPress" project materials developed by [Lindsay K. Mattock](http://lindsaymattock.net/) for the the [SLIS 5020 Computing Foundations course](http://lindsaymattock.net/computingfoundations.html). 
+
+# Getting Started With WordPress
 
 <p align="center"><a href="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_1.jpg?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/installing-wordpress/tree/master/images/image_1.jpg?raw=true" /></a></p>
 
