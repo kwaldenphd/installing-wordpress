@@ -25,6 +25,21 @@ By the end of this lab you will be able to:
 
 This lab is based on the "Project 6: WordPress" project materials developed by [Lindsay K. Mattock](http://lindsaymattock.net/) for the the [SLIS 5020 Computing Foundations course](http://lindsaymattock.net/computingfoundations.html). 
 
+# Table of Contents
+- [Getting Started With WordPress](#getting-started-with-wordpress)
+- [Step 1: Download the WordPress Package](#step-1-download-wordpress-package)
+- [Step 2: Create a database for WordPress](#step-2-create-a-database-for-wordpress)
+- [Step 3: (Optional) Find and rename wp-config-sample.php to wp-config.php](#step-3-optional-find-and-rename-wp-config-samplephp-to-wp-configphp)
+- [Step 4: Upload the WordPress files to the desired location on your webserver](#step-4-upload-the-wordpress-files-to-the-desired-location-on-your-webserver)
+  * [Setting a Permission Scheme for Wordpress](#setting-a-permission-scheme-for-wordpress)
+- [Step 5: Run the WordPress installation script by accessing the URL in a web browser](#step-5-run-the-wordpress-installation-script-by-accessing-the-url-in-a-web-browser)
+  * [Using WordPress](#using-wordpress)
+  * [FTP for WordPress](#ftp-for-wordpress)
+- [Create a WordPress Site](#create-a-wordpress-site)
+- [Putting It All Together](#putting-it-all-together)
+- [Lab Notebook Questions](#lab-notebook-questions)
+
+
 # Getting Started With WordPress
 
 <p align="center"><a href="https://github.com/kwaldenphd/installing-wordpress/blob/master/images/image_1.jpg?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/installing-wordpress/blob/master/images/image_1.jpg?raw=true" /></a></p>
