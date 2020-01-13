@@ -8,7 +8,7 @@ This tutorial is licensed under a <a href="http://creativecommons.org/licenses/b
 In this lab, we will install WordPress on our Raspberry Pi Webserver. 
 
 WordPress has two versions: 
-1. a hosted version Wordpress.com where you create a login and have web access to the administrative end of the software so that you can create and modify a website
+1. a hosted version from Wordpress.com where you create a login and have web access to the administrative end of the software so that you can create and modify a website
 2. a self-hosted version from Wordpress.org that you install on your server and manage the WordPress instance locally yourself. The self-hosted version allows you to make many more customizations to your site and the software and have full control of the site. 
 
 With the hosted version, you are accessing the software on another server maintained by the developer of the software. With the self-hosted version, you are installing and accessing the software on your own server – in this case, our Raspberry Pi. The other option is to use a third-party host like https://reclaimhosting.com/. With this option a third-party maintains the server (the computer), but you have full access at the Terminal just like you do on your Pi. You can download any software that you’d like and work with the system at the command line. You are essentially leasing space on another's server.
@@ -85,7 +85,6 @@ This lab is based on the "Project 6: WordPress" project materials developed by [
 <p align="center"><a href="https://github.com/kwaldenphd/installing-wordpress/blob/master/images/Image_4.jpg?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/installing-wordpress/blob/master/images/Image_4.jpg?raw=true" /></a></p>
 
 5. Open a Terminal session and log in to MySQL with the command `mysql –u root –p;` This command is requesting to log in to MySQL as the root user. You’ll be prompted for your root password. 
-  * Remember the cursor will not move as you enter your password.
 
 <blockquote>IMPORTANT: Remember the cursor will not move as you enter your password.</blockquote>
 
@@ -124,9 +123,9 @@ This lab is based on the "Project 6: WordPress" project materials developed by [
 16. Now we need to put our `wordpress` folder in our `public_html` directory, where all of our web files are located for our website. 
 
 18. We have two options:
-  a. “integrating WordPress into the root of our domain” – this means that when we visit `mysite.dev`, the home page will default to our WordPress site. We can use the `mv` command to move all of the contents of the folder (each individual file within the wordpress directory) to the `public_html` folder. `sudo mv ~/Downloads/wordpress/* /var/www/mysite.dev/public_html`
+  * “integrating WordPress into the root of our domain” – this means that when we visit `mysite.dev`, the home page will default to our WordPress site. We can use the `mv` command to move all of the contents of the folder (each individual file within the wordpress directory) to the `public_html` folder. `sudo mv ~/Downloads/wordpress/* /var/www/mysite.dev/public_html`
 
-  b. The second option is to install WordPress in a subdirectory. This means that we will move the wordpress folder to our `public_html` directory. We will access WordPress by navigating to http://mysite.dev/wordpress in the browser. We can accomplish this using `mv wordpress /var/www/mysite.dev/public_html`
+  * The second option is to install WordPress in a subdirectory. This means that we will move the wordpress folder to our `public_html` directory. We will access WordPress by navigating to http://mysite.dev/wordpress in the browser. We can accomplish this using `mv wordpress /var/www/mysite.dev/public_html`
 
 19. You can also rename your folder if you’d like. For example, in the WordPress instructions the wordpress directory has been renamed “blog” so that you would navigate to http://mysite.dev/blog. To rename the folder you also use the move command: `mv wordpress newname`. For example, `sudo mv wordpress blog` to rename the folder to `blog`.
 
@@ -149,11 +148,11 @@ This lab is based on the "Project 6: WordPress" project materials developed by [
 <blockquote>Use http://explainshell.com for further explanation of these commands.</blockquote>
 
 26. Now we need to change the permissions for the files and directories within the `public_html` directory. 
-  a. use `chmod 775 public_html` to change the permissions on the `public_html` folder
-  b. use `cd` to move into the `public_html` folder
-  c. use `sudo find .–type d | xargs sudo chmod 777`
-  e. use `sudo find . –type f –exec chmod 664 {} \;`
-  f. use `ls -l` to view the changes
+  * use `chmod 775 public_html` to change the permissions on the `public_html` folder
+  * use `cd` to move into the `public_html` folder
+  * use `sudo find .–type d | xargs sudo chmod 777`
+  * use `sudo find . –type f –exec chmod 664 {} \;`
+  * use `ls -l` to view the changes
 
 # Step 5: Run the WordPress installation script by accessing the URL in a web browser.
 
@@ -246,6 +245,6 @@ All of the required questions are listed here for you to reference. Be sure to a
 
 Q1: Compare your experience working in WordPress to building your own HTML site at the beginning of the term. Which do you prefer, why?
 
-Q2: Navigate through the .css and some of the .php files. Do you feel comfortable editing these files? What looks familiar? What do you have questions about?
+Q2: Navigate through the `.css` and some of the `.php` files. Do you feel comfortable editing these files? What looks familiar? What do you have questions about?
 
-Q3: Explore a few tables. What information can you find? Record your observations in your notebook. Try wp_users, wp_options, and wp_posts.
+Q3: Explore a few tables. What information can you find? Record your observations in your notebook. Try `wp_users`, `wp_options`, and `wp_posts`.
