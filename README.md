@@ -104,7 +104,7 @@ This lab is based on the "Project 6: WordPress" project materials developed by [
 
 # Step 3: (Optional) Find and rename wp-config-sample.php to wp-config.php.
 
-10. Find and rename wp-config-sample.php to wp-config.php, then edit the file and add your database information. This step is optional, so we are going to skip it for now. We’ll return to this step in a few minutes.
+10. Find and rename `wp-config-sample.php` to `wp-config.php`, then edit the file and add your database information. This step is optional, so we are going to skip it for now. We’ll return to this step in a few minutes.
 
 # Step 4: Upload the WordPress files to the desired location on your webserver.
 
@@ -206,7 +206,7 @@ This lab is based on the "Project 6: WordPress" project materials developed by [
 
 <p align="center"><a href="https://github.com/kwaldenphd/installing-wordpress/blob/master/images/Image_8.jpg?raw=true"><img class="aligncenter" src="https://github.com/kwaldenphd/installing-wordpress/blob/master/images/Image_8.jpg?raw=true" /></a></p>
 
-47. Now, take some time to add some content to your new WordPress site. Unlike our HTML example, we have a GUI interface for generating a website. Pick a theme, create a blog post, and add a page. You can use your HTML project site as an example
+47. Now, take some time to add some content to your new WordPress site. Unlike our HTML example, we have a GUI interface for generating a website. Pick a theme, create a blog post, and add a page. You can use your HTML project site as an example.
 
 <blockquote>Q1: Compare your experience working in WordPress to building your own HTML site at the beginning of the term. Which do you prefer, why?</blockquote>
 
